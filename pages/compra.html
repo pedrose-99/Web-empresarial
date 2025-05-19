@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navegación-->
+    <nav class="navigation">
+        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="../Image/idioma1.jpg"></button>
+        <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
+    </nav>
+    <section class="home">
+        <div class="mode">
+            <button class="btn--mode">Cambiar a modo claro</button>
+        </div>
+    </section>
+    
+    <div class="compra__datos">
+        <form>
+            <h2>Dirección: </h2>
+            <div class="compra__datos--direccion">
+                <div class="compra__datos--escribir">
+                    <p class="compra__datos--insertar">Ciudad*</p>
+                    <input type="text" class="compra__direccion--input" required>
+                </div>
+
+                <div class="compra__datos--escribir">
+                    <p class="compra__datos--insertar">Calle*</p>
+                    <input type="text" class="compra__direccion--input" value="C/" required>
+                </div>
+            
+                <div class="compra__datos--escribir">
+                    <p class="compra__datos--insertar">Número*</p>
+                    <input type="text" class="compra__direccion--input" required>
+                </div>
+                
+                <div class="compra__datos--escribir">
+                    <p class="compra__datos--insertar">Planta</p>
+                    <input type="text" class="compra__direccion--input">
+                </div>
+                
+                <div class="compra__datos--escribir">
+                    <p class="compra__datos--insertar">Letra</p>
+                    <input type="text" class="compra__direccion--input">
+                </div>
+            </div>
+
+            <h3>Datos personales:</h3>
+            <div class="compra__datos--personal">
+                <p class="compra__datos--insertar">Nombre*</p>
+                <input type="text" class="compra__direccion--input" required>
+                <p class="compra__datos--insertar">Apellidos*</p>
+                <input type="text" class="compra__direccion--input" required>
+                <p class="compra__datos--insertar">Correo Electrónico*</p>
+                <input type="text" class="compra__direccion--input" required>
+            </div>            
+        </form>
+
+        <div class="compra__buttons">
+            <button class="compra__socio" id="socio">Quiero hacerme socio</button>
+            <button class="compra__submit" id="submit_compra">Confirmar</button>
+        </div>
+        
+    </div>
+
+
+    <footer class="footer">
+        <div class="redes">
+            <img class="redes--image" src="../Image/Redes.png">
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

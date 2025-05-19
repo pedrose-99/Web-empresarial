@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navegación-->
+    <nav class="navigation">
+        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="../Image/idioma1.jpg"></button>
+        <a class="navigation--item" href="../index.html">Inicio</a>
+        <a class="navigation--item" href="tienda.html">Tienda</a>
+        <a class="navigation--item" href="trabaja.html">Trabaja con nosotros</a>
+        <a class="navigation--item" href="juego.html">Juego</a>
+        <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
+    </nav>
+    <section class="home">
+        <div class="mode">
+            <button class="btn--mode">Cambiar a modo claro</button>
+        </div>
+    </section>
+
+    <h1 class="cesta__titulo">Tu cesta</h1>
+
+    <div class="cesta__productos" id="producto_cesta">
+        <div class="cesta__productos--producto">
+            <img class="cesta__productos--img" id="productoImg">
+
+            <div class="cesta__productos--text">
+                <p class="cesta__productos--desc">Descripción</p><br>
+                <p class="cesta__productos--precio">Precio</p>
+            </div>
+            <button class="cesta__botonD" id="btn_delete_product">Eliminar</button>
+        </div>
+    </div>
+    <p class="cesta__total">Total: 0 €</p>
+    <button class="cesta__boton" id="btn_goTo_compra">Finalizar compra</button>
+    
+    
+    <footer class="footer">
+        <div class="redes">
+            <img class="redes--image" src="../Image/Redes.png">
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

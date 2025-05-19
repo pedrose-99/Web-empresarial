@@ -1,0 +1,512 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/*Navegación*/
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: black;
+}
+.navigation--item{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    border-style:solid;
+    border-color: black;
+    padding: 20px;
+}
+.navigation--item:hover{
+    border-top-color: white;
+    border-bottom-color: white;
+    transition-duration: 0.3s;
+}
+.btn{
+    background-color: black;
+    border: none;
+    color: white;
+}
+.btn__cambios--idioma{
+    font-size: 15px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+
+}
+.navigation--item--idioma{
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    min-height: 30px;
+}
+
+.mode{
+    background-color: rgba(41, 41, 41, 0.844);
+    padding: 10px;
+}
+.btn--mode{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.btn--mode:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+/*FOOTER*/
+.footer{
+    font-size: 20px;
+    margin-top: 60px;
+    padding: 20px;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color: black;
+}
+.redes--image{
+    max-width: 250px;
+    min-width: 250px;
+}
+
+/*INICIO*/
+.inicio{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.inicio__shop{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: #871919 ;
+    border-radius: 60px;
+    font-size: 30px;
+    color: white;
+}
+.inicio__shop:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.aboutUs{
+    padding-left: 100px;
+    padding-top: 30px;
+    background-color:black
+}
+.aboutUs__title{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: left;
+    background-color: #871919;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 30px;
+    margin-left: -40px;
+}
+.aboutUs__intro{
+    font-size: 25px;
+    text-align: left;
+    padding: 40px;
+    margin-right: 100px;
+    display: flex;
+    text-align: justify;
+}
+.aboutUs__intro--div{
+    margin-left: 40px;
+}
+.aboutUs__intro--image{
+    max-width: 500px;
+    min-width: 500px;
+}
+.slogan__title{
+    font-size: 50px;
+    margin-left: 40px;
+    color:#871919;
+}
+.slogan__text{
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    text-align: justify;
+    padding-bottom: 90px;
+}
+.slogan__text--image{
+    max-width: 600px;
+    min-width: 600px;
+}
+.objetivos{
+    background-color: white;
+    color:black;
+}
+.objetivos__texto{
+    padding: 40px;
+    display: grid;
+    grid-template-areas: 
+    '. . a'
+    'c . b';
+
+}
+.objetivos__title{
+    text-align: right;
+    font-size: 60px;
+    grid-area: a;
+}
+.objetivos__texto--text{
+    font-size: 25px;
+    text-align: justify;
+    grid-area: b;
+    padding-left: 60px;
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+.objetivos__image{
+    grid-area: c;
+    margin-top: -20px;
+    max-width: 600px;
+    min-width: 600px;
+    max-height: 600px;
+    min-height: 400px;
+    padding-bottom: 30px;
+}
+
+
+/*TIENDA*/
+.catalogo__title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+.catalogo__itemList{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.catalogo__itemList--item{
+    background-color: white;
+    border-style:solid;
+    border-color: white;
+}
+.catalogo--item--img{
+    max-width: 300px;
+    min-width: 300px;
+}
+.catalogo--item--img:hover{
+    transform: scale(0.9,0.9);
+    transition-duration: 0.5s;
+}
+.catalogo--item--desc{
+    background-color: black;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-bottom: -1px;
+}
+.btn__item{
+    border: none;
+}
+
+/*PAGINA COMPRA PRODUCTO*/
+.producto__compra{
+    display: flex;
+    padding: 100px;
+}
+.producto__descripcion{
+    padding: 50px;
+    margin-top: -70px;
+    font-size: 25px;
+}
+.producto__options{
+    padding-bottom: 50px;
+}
+.producto--talla{
+    color:gray;
+}
+.producto--cantidad{
+    color:gray;
+    margin-top: 50px;
+}
+.cantidad--number{
+    padding: 10px;
+    width: 50px;
+}
+.producto__addTo__Cesta{
+    background-color: #871919;
+    padding: 25px;
+    border-radius: 10%;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.producto__addTo__Cesta:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+.producto__addTo__Cesta:active{
+    background-color:black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+
+/*PAGINA TRABAJA CON NOSOTROS*/
+
+.trabaja__titulo{
+    background-image: url("Image/leopardo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    color:white;
+}
+.trabaja__titulo--texto1{
+    margin-top: -20px;
+    font-size: 150px;
+    text-align: left;
+}
+.trabaja__titulo--texto2{
+    margin-top: -150px;
+    font-size: 100px;
+    text-align: right;
+}
+.equipo__titulo{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+}
+.trabaja__equipo{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.equipo--card{
+    display: flex;
+    flex-direction: column;
+}
+.equipo--card--img{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    border-radius: 20px;
+}
+.equipo__desc{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.unete{
+    background-color: white;
+    color:black;
+    padding: 50px;
+    border-radius: 30px;
+}
+.unete__formulario{
+    display: flex;
+}
+.unete__formulario--datos{
+    display: flex;
+}
+.unete__titulo{
+    text-align: left;
+    font-size: 60px;
+}
+.unete__campo--texto{
+    font-size: 20px;
+}
+.unete__campo--input{
+    padding: 20px;
+    border-radius: 40px;
+    border-style: groove;
+    border-color: rgb(230, 230, 230);
+    padding-right: 400px;
+    font-size: 15px;
+}
+.unete__imagen{
+    max-width: 700px;
+    min-width: 500px;
+    max-height: 400px;
+    min-height: 400px;
+    margin-top: 200px;
+}
+.unete__envio{
+    margin-top: 250px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    background-color: #871919;
+    color: white;
+}
+
+/*CESTA*/
+.cesta__titulo{
+    font-size: 50px;
+}
+.cesta__boton{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    border-radius: 40px;
+    background-color: #871919;
+    color: white;
+    margin-left: 1100px;
+}
+.cesta__boton:hover{
+    background-color: black;
+    transition-duration: 0.5s;
+}
+.cesta__boton:active{
+    background-color: white;
+    color: black;
+}
+.cesta__productos{
+    padding: 40px;
+}
+.cesta__productos--producto{
+    display: flex;
+    
+}
+.cesta__productos--img{
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px ;
+    background-color: white;
+}
+.cesta__productos--text{
+    padding-left: 30px;
+}
+.cesta__productos--desc{
+    font-size: 20px;    
+}
+.cesta__productos--precio{
+    color:gray;
+    font-size: 25px;
+}
+.cesta__botonD{
+    margin-left: 780px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    max-height: 60px;
+    border-radius: 40px;
+}
+.cesta__botonD:hover{
+    background-color: #871919;
+    color:white;
+    transition-duration: 0.3s;
+}
+.cesta__total{
+    font-size: 30px;
+    text-align: right;
+    margin-right: 100px;
+}
+
+/*COMPRA*/
+.compra__datos{
+    padding: 30px;
+    font-size: 20px;
+}
+.compra__datos--direccion{
+    display: flex;
+    margin-top: -40px;
+}
+.compra__datos--escribir{
+    padding: 20px;
+}
+.compra__direccion--input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 40px;
+}
+.compra__datos--personal{
+    padding: 30px;
+    margin-top: -40px;
+}
+
+.compra__buttons{    
+    display: flex;
+    flex-direction: column;
+    margin-left: 1100px;
+    margin-top: -150px;
+}
+.compra__socio{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.compra__socio:hover{
+    background-color: #871919;
+    color:white;
+    transition-duration: 0.3s;
+}
+.compra__submit{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #871919;
+    color: white;
+}
+
+/*Pago completado*/
+.pagoCompletado{
+    background-image: url(/Image/fondo.png);
+    background-size: cover;
+    background-position: 0%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    margin-bottom: -50px;
+}
+.pago__completado{
+    background-color: rgba(0, 0, 0, 0.816);
+    padding: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.pago__completado--button{
+    text-decoration: none;
+    color:white;
+    background-color: #871919;
+    padding: 20px;
+    border-radius: 40px;
+}
+.pago__completado--button:hover{
+    background-color: black;
+    transition-duration: 0.3s;
+    border-style: solid;
+    border-color: white;
+}
