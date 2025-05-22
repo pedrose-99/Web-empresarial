@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+<body class="body-spicyShop">
+
+    <div class="container-spicyShop">
+        <section class="section-spicyShop" id="p0-spicyShop">
+            <h3 class="section-spicyShop__title">1 - ¿Donde prefieres ir de vacaciones?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p0-spicyShop" onclick="respuesta(0, this)"> Playa
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p0-spicyShop" onclick="respuesta(0, this)"> Montaña
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p0-spicyShop" onclick="respuesta(0, this)"> Ciudad Grande
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p0-spicyShop" onclick="respuesta(0, this)"> Ciudad Histórica
+            </label>
+        </section>
+
+        <section class="section-spicyShop" id="p1-spicyShop">
+            <h3 class="section-spicyShop__title">2 - ¿Que prefieres hacer en tu tiempo libre?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p1-spicyShop" onclick="respuesta(1, this)"> VideoJuegos
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p1-spicyShop" onclick="respuesta(1, this)"> Leer
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p1-spicyShop" onclick="respuesta(1, this)"> Hacer deporte
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p1-spicyShop" onclick="respuesta(1, this)"> Ir al cine
+            </label>
+        </section>
+
+        <section class="section-spicyShop" id="p2-spicyShop">
+            <h3 class="section-spicyShop__title">3 - ¿Qué palabra describe mejor tu personalidad?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p2-spicyShop" onclick="respuesta(2, this)"> Creativo
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p2-spicyShop" onclick="respuesta(2, this)"> Relajado
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p2-spicyShop" onclick="respuesta(2, this)"> Nervioso
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p2-spicyShop" onclick="respuesta(2, this)"> Tímido
+            </label>
+        </section>
+
+        <section class="section-spicyShop" id="p3-spicyShop">
+            <h3 class="section-spicyShop__title">4 - ¿Con qué relacionas tu profesión?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p3-spicyShop" onclick="respuesta(3, this)"> Informática
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p3-spicyShop" onclick="respuesta(3, this)"> Salud
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p3-spicyShop" onclick="respuesta(3, this)"> Administración
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p3-spicyShop" onclick="respuesta(3, this)"> Arte
+            </label>
+        </section>
+
+        <section class="section-spicyShop" id="p4-spicyShop">
+            <h3 class="section-spicyShop__title">5 - ¿Qué estación prefieres?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p4-spicyShop" onclick="respuesta(4, this)"> Verano
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p4-spicyShop" onclick="respuesta(4, this)"> Invierno
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p4-spicyShop" onclick="respuesta(4, this)"> Primavera
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p4-spicyShop" onclick="respuesta(4, this)"> Otoño
+            </label>
+        </section>
+
+        <section class="section-spicyShop" id="p5-spicyShop">
+            <h3 class="section-spicyShop__title">6 - ¿Qué fruta prefieres?</h3>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="1" name="p5-spicyShop" onclick="respuesta(5, this)"> Platano
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="2" name="p5-spicyShop" onclick="respuesta(5, this)"> Melón
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="5" name="p5-spicyShop" onclick="respuesta(5, this)"> Sandía
+            </label>
+            <label class="section-spicyShop__label">
+                <input type="radio" value="10" name="p5-spicyShop" onclick="respuesta(5, this)"> Naranja
+            </label>
+        </section>
+
+        <button class="btn-spicyShop" onclick="mostrarResultado()">ENVIAR</button>
+        <h2 class="result-spicyShop__title">Resultado Final</h2>
+        <div class="result-spicyShop">
+            <img id="imagen-spicyShop" src="" alt="" class="result-spicyShop__img">
+            <p id="text-spicyShop" class="result-spicyShop__text"> </p>
+        </div>
+        <a class="volver-index-spicyShop" href="index.html">Volver al inicio</a>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
