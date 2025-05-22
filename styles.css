@@ -135,18 +135,26 @@ body{
     max-width: 500px;
     min-width: 500px;
 }
+.objectives--text{
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
 .slogan__title{
     font-size: 50px;
     margin-left: 40px;
     color:#871919;
 }
+.slogan__description{
+    display: flex;
+    
+}
 .slogan__text{
     font-size: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     text-align: justify;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 .slogan__text--image{
     max-width: 600px;
@@ -316,6 +324,10 @@ body{
     padding-top: 10px;
     font-size: 20px;
 }
+.equipo__desc1{
+    margin-top: -10px;
+    font-size: 20px;
+}
 .unete{
     background-color: white;
     color:black;
@@ -427,7 +439,7 @@ body{
 .cesta__total{
     font-size: 30px;
     text-align: right;
-    margin-right: 100px;
+    margin-right: 190px;
 }
 
 /*COMPRA*/

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +10,38 @@
 
     <!--Navegación-->
     <nav class="navigation">
-        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="../Image/idioma1.jpg"></button>
-        <a class="navigation--item" href="../index.html">Inicio</a>
-        <a class="navigation--item" href="tienda.html">Tienda</a>
-        <a class="navigation--item" href="trabaja.html">Trabaja con nosotros</a>
-        <a class="navigation--item" href="">Juego</a>
+        <button class="btn__cambios--idioma" onclick="changeLanguage3('en')">
+            <img class="navigation--item--idioma" src="../Image/idioma1.jpg">
+        </button>
+        <a class="navigation--item" href="../index.html" id="nav-item1">Inicio</a>
+        <a class="navigation--item" href="tienda.html" id="nav-item2">Tienda</a>
+        <a class="navigation--item" href="trabaja.html" id="nav-item3">Trabaja con nosotros</a>
+        <a class="navigation--item" href="pages/trabaja.html">Test</a>
+        
         <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
     </nav>
-    <section class="home">
-        <div class="mode">
-            <button class="btn--mode">Cambiar a modo claro</button>
-        </div>
-    </section>
 
         <div class="producto__compra">
             <div class="producto__detalles">
-                <img class="producto__imagen" src="../Image/1.png">    
+                <img class="producto__imagen" id= "imagen-producto">    
             </div>
             <div class="producto__descripcion">
-                    <h1 class="producto__nombre">Nombre producto</h1>
+                    <h1 class="producto__nombre" id="nombre-producto">Nombre producto</h1>
                     <div class="producto__descripcion--text">
-                        59,99€<br>
+                        <p><span id="precio-producto">precio</span></p><br>
                         <form class="producto__options">
-                            <p class="producto--talla">Selecciona una talla: </p>
+                            <p class="producto--talla" id = "size">Selecciona una talla: </p>
                             <input type="radio" name="option" value="option_1">XS
                             <input type="radio" name="option" value="option_2">S
                             <input type="radio" name="option" value="option_3">M
                             <input type="radio" name="option" value="option_4">L
                             <input type="radio" name="option" value="option_5">XL
 
-                            <p class="producto--cantidad">Selecciona una cantidad: </p>
+                            <p class="producto--cantidad" id="quantity">Selecciona una cantidad: </p>
                             <input type="number" min="0" class="cantidad--number">
                         </form>
 
-                        <button class="producto__addTo__Cesta">Añadir a la cesta</button>
+                        <button class="producto__addTo__Cesta" id="add" onclick="addToCart()">Añadir a la cesta</button>
                     </div>
             </div>
         </div>
@@ -55,6 +53,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

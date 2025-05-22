@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +9,32 @@
 <body>
     <!--Navegación-->
     <nav class="navigation">
-        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="../Image/idioma1.jpg"></button>
-        <a class="navigation--item" href="../index.html">Inicio</a>
-        <a class="navigation--item" href="tienda.html">Tienda</a>
-        <a class="navigation--item" href="trabaja.html">Trabaja con nosotros</a>
-        <a class="navigation--item" href="">Juego</a>
+        <button class="btn__cambios--idioma" onclick="changeLanguage4('en')">
+            <img class="navigation--item--idioma" src="../Image/idioma1.jpg">
+        </button>
+        <a class="navigation--item" href="../index.html" id="nav-item1">Inicio</a>
+        <a class="navigation--item" href="tienda.html" id="nav-item2">Tienda</a>
+        <a class="navigation--item" href="trabaja.html" id="nav-item3">Trabaja con nosotros</a>
+        <a class="navigation--item" href="pages/trabaja.html">Test</a>
+        
         <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
     </nav>
-    <section class="home">
-        <div class="mode">
-            <button class="btn--mode">Cambiar a modo claro</button>
-        </div>
-    </section>
     
         <div class="trabaja__titulo">
-            <h1 class="trabaja__titulo--texto1">Trabaja</h1>
-            <h2 class="trabaja__titulo--texto2">con nosotros</h2>
+            <h1 class="trabaja__titulo--texto1" id="work-with-us">Trabaja</h1>
+            <h2 class="trabaja__titulo--texto2" id = "work-with-us2">con nosotros</h2>
         </div>
 
     <section class="equipo">
-        <h1 class="equipo__titulo">Nuestro equipo</h1>
+        <h1 class="equipo__titulo" id="our-team">Nuestro equipo</h1>
         <div class="trabaja__equipo">
             <div class="equipo--card">
                 <img class="equipo--card--img" src="../Image/Imagen de WhatsApp 2025-04-08 a las 11.11.33_b3f444e8.jpg">
-                <p class="equipo__desc">Alicia Montoya | <br> Encargada del e-commerce</p>
+                <p class="equipo__desc">Alicia Montoya | <br><p class="equipo__desc1" id= "members-1">Encargada del e-commerce</p></p>
             </div>
             <div class="equipo--card">
                 <img class="equipo--card--img" src="../Image/Imagen de WhatsApp 2025-04-08 a las 11.59.21_7a96f758.jpg">
-                <p class="equipo__desc">Shadia Gallardo |<br> Responsable de marketing</p>
+                <p class="equipo__desc">Shadia Gallardo |<br><p class="equipo__desc1" id="members-2">Responsable de marketing</p></p>
             </div>
             <div class="equipo--card">
                 <img class="equipo--card--img" src="../Image/Imagen de WhatsApp 2025-04-08 a las 11.59.31_cccbeb3d.jpg">                
@@ -44,7 +42,7 @@
             </div>
             <div class="equipo--card">
                 <img class="equipo--card--img" src="../Image/Imagen de WhatsApp 2025-04-08 a las 12.01.42_e80098f4.jpg">
-                <p class="equipo__desc">Esmeralda Esono |<br> Directora de diseño</p>
+                <p class="equipo__desc">Esmeralda Esono |<br><p class="equipo__desc1" id="members-4">Directora de diseño</p></p>
             </div>
         </div>
     </section>
@@ -53,27 +51,30 @@
         <div class="unete__formulario">
             <div class="unete__formulario--datos">
             <form>
-                <h1 class="unete__titulo">Únete a nosotros</h1>`
-                <p class="unete__campo--texto">Nombre</p>
+                <h1 class="unete__titulo" id="work-with-us3">Únete a nosotros</h1>`
+
+                <p class="unete__campo--texto" id="form-name">Nombre</p>
                 <input type="text" class="unete__campo--input" placeholder="Escribe tu nombre">
-                <p class="unete__campo--texto">Apellidos</p>
+
+                <p class="unete__campo--texto" id="form-surname">Apellidos</p>
                 <input type="text" class="unete__campo--input" placeholder="Escribe tus apellidos">
+
                 <p class="unete__campo--texto">Email</p>
                 <input type="text" class="unete__campo--input" placeholder="Escribe tu email">
-                <p class="unete__campo--texto">Teléfono</p>
+
+                <p class="unete__campo--texto" id="form-number">Teléfono</p>
                 <input type="tel" class="unete__campo--input">
 
-        
-                <p class="unete__campo--texto">Fecha</p>
+                <p class="unete__campo--texto" id="form-date">Fecha</p>
                 <input type="date" class="unete__campo--input">
-                <p class="unete__campo--texto">Currículum</p>
-                <input type="file" class="unete__campo--input">
-                
+
+                <p class="unete__campo--texto" id="form-cv">Currículum</p>
+                <input type="file" class="unete__campo--input">    
             </form>
             </div>
             <div class="unete__formulario--side">
                 <img class="unete__imagen" src="../ImageNB/backgroundpostheader.png">
-                <button class="unete__envio" id="boton_unete__enviar">Enviar</button>
+                <button class="unete__envio" id="form-send">Enviar</button>
             </div>
 
         </div>

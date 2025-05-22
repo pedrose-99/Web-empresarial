@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,98 +9,107 @@
 <body>
     <!--Navegación-->
     <nav class="navigation">
-        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="../Image/idioma1.jpg"></button>
-        <a class="navigation--item" href="../index.html">Inicio</a>
-        <a class="navigation--item" href="tienda.html">Tienda</a>
-        <a class="navigation--item" href="trabaja.html">Trabaja con nosotros</a>
-        <a class="navigation--item" href="">Juego</a>
+        <button class="btn__cambios--idioma" onclick="changeLanguage2('en')">
+            <img class="navigation--item--idioma" src="../Image/idioma1.jpg">
+        </button>
+        <a class="navigation--item" href="../index.html" id="nav-item1">Inicio</a>
+        <a class="navigation--item" href="tienda.html" id="nav-item2">Tienda</a>
+        <a class="navigation--item" href="trabaja.html" id="nav-item3">Trabaja con nosotros</a>
+        <a class="navigation--item" href="pages/trabaja.html">Test</a>
+        
         <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
     </nav>
-    <section class="home">
-        <div class="mode">
-            <button class="btn--mode">Cambiar a modo claro</button>
-        </div>
-    </section>
-    
+        
     <h1 class=catalogo__title>Nuestro catálogo</h1>
 
     <div class="catalogo__itemList">
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/1.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item"  data-id= "camiseta-billar"><img class="catalogo--item--img" src="../Image/1.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item1">Camiseta bolas de billar</p>
+                <p> 39.99€</p>
+            </div>
         </div>
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/2.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "camiseta-tigre"><img class="catalogo--item--img" src="../Image/2.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item2">Camiseta tigre</p>
+                <p> 39.99€</p>
+            </div>
         </div>
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/3.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "camiseta-basica-spicy"><img class="catalogo--item--img" src="../Image/3.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item3">Camiseta básica Spicy</p>
+                <p> 25.00€</p>
+            </div>
         </div>
-            <div class="catalogo__itemList--item">
-                <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/4.png"></button>
-                <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+        <div class="catalogo__itemList--item">
+            <button class="btn__item" data-id= "camiseta-mechero"><img class="catalogo--item--img" src="../Image/4.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item4">Camiseta mechero</p>
+                <p> 29.99€</p>
+            </div>
         </div>
     </div>
         <div class="catalogo__itemList">
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/5.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "sudadera-basica-spicy"><img class="catalogo--item--img" src="../Image/5.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item5">Sudadera básica spicy</p>
+                <p> 59.99€</p>
+            </div>
         </div>
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/7.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "camiseta-pantera"><img class="catalogo--item--img" src="../Image/7.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item6">Camiseta pantera</p>
+                <p> 49.99€</p>
+            </div>
         </div>
-            <div class="catalogo__itemList--item">
-                <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/8.png"></button>
-                <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+        <div class="catalogo__itemList--item">
+            <button class="btn__item" data-id= "sudadera-estampada-logo"><img class="catalogo--item--img" src="../Image/8.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item7">Sudadera estampada logo</p>
+                <p> 55.00€</p>
+            </div>
         </div>
-            <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/9.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+        <div class="catalogo__itemList--item">
+        <button class="btn__item" data-id= "sudadera-billar"><img class="catalogo--item--img" src="../Image/9.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item8">Sudadera billar</p>
+                <p> 59.99€</p>
+            </div>
         </div>
     </div>
         <div class="catalogo__itemList">
-    
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/10.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "sudadera-tigre"><img class="catalogo--item--img" src="../Image/10.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item9">Sudadera tigre</p>
+                <p> 59.99€</p>
+            </div>
         </div>
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/14.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
-        </div>
-            <div class="catalogo__itemList--item">
-                <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/15.png"></button>
-                <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "top-spicy-azul"><img class="catalogo--item--img" src="../Image/14.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item10">Top Spicy azul</p>
+                <p> 25.00€</p>
+            </div>
         </div>
         <div class="catalogo__itemList--item">
-            <button class="btn__item" id = "boton_goTo_Item"><img class="catalogo--item--img" src="../Image/17.png"></button>
-            <p class="catalogo--item--desc">
-                Descripcion
-            </p>
+            <button class="btn__item" data-id= "top-spicy-rojo"><img class="catalogo--item--img" src="../Image/15.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item11">Top Spicy rojo</p>
+                <p> 25.00€</p>
+            </div>
+        </div>
+        <div class="catalogo__itemList--item">
+            <button class="btn__item" data-id= "chaqueta-spicy"><img class="catalogo--item--img" src="../Image/17.png"></button>
+            <div class="catalogo--item--desc">
+                <p id="shop-item12">Chaqueta spicy</p>
+                <p> 99.99€</p>
+            </div>
         </div>
     </div>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +10,20 @@
 
     <!--Navegación-->
     <nav class="navigation">
-        <button class="btn__cambios--idioma"><img class="navigation--item--idioma" src="Image/idioma1.jpg"></button>
-        <a class="navigation--item" href="index.html">Inicio</a>
-        <a class="navigation--item" href="pages/tienda.html">Tienda</a>
-        <a class="navigation--item" href="pages/trabaja.html">Trabaja con nosotros</a>
-        <a class="navigation--item" href="">Juego</a>
+        <button class="btn__cambios--idioma" onclick="changeLanguage1('en')">
+            <img class="navigation--item--idioma" src="Image/idioma1.jpg">
+        </button>
+        <a class="navigation--item" href="index.html" id="nav-item1">Inicio</a>
+        <a class="navigation--item" href="pages/tienda.html" id="nav-item2">Tienda</a>
+        <a class="navigation--item" href="pages/trabaja.html" id="nav-item3">Trabaja con nosotros</a>
+        <a class="navigation--item" href="pages/trabaja.html">Test</a>
+        
         <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="Image/carrito.png"></button>
     </nav>
-    <section class="home">
-        <div class="mode">
-            <button class="btn--mode">Cambiar a modo claro</button>
-        </div>
-        
+    <section class="home">        
         <div class="inicio">
             <img src="Image/IMG_1214.png">
-            <button class="inicio__shop" id="boton_goTo_Tienda">Ir a la tienda</button>
+            <button class="inicio__shop" id="visitShop">Ir a la tienda</button>
         </div>    
     </section>
 
@@ -35,13 +34,13 @@
             <div class="aboutUs__intro--div">
             <!--Animación salir de la imagen(si se puede)-->
             <h1 class="aboutUs__title">Sobre nosotros</h1>
-            <p class="aboutUs__text--p">Spicy gallery es mucho más que una tienda de ropa. Somos un estilo de vida. Nuestra pasión
+            <p class="aboutUs__text--p" id = "About-us">Spicy gallery es mucho más que una tienda de ropa. Somos un estilo de vida. Nuestra pasión
             por el estilo y la moda urbana nos impulsa a ofrecer prendas únicas para jóvenes de espíritu
             libre.<br><br>
-            Spicy gallery no es solo ropa; es para quiénes se atreven a mezclar cualquier estilo que les
+            <p id="About-us2">Spicy gallery no es solo ropa; es para quiénes se atreven a mezclar cualquier estilo que les
             gusta sin miedo al qué dirán o a lo que opine la gente. En un mundo en el que todos quieren
             encajar, Spicy gallery es una marca que pretende salirse de lo normal, una marca diseñada
-            para el mundo.</p></div>
+            para el mundo.</p></p></div>
         </div>  
     </section>
     <section class="objetivos">
@@ -49,37 +48,42 @@
             <h1 class="objetivos__title">Nuestros objetivos</h1>
             <img class="objetivos__image" src="Image/IMG_1288.png">
             <div class="objetivos__texto--text">
-                Spicy Gallery busca ser una referencia global, conectando con una comunidad apasionada por el arte, la
+                <p class = "objectives--text" id="Our-objectives">Spicy Gallery busca ser una referencia global, conectando con una comunidad apasionada por el arte, la
                 música y el estilo de vida urbano, mientras impulsamos la sostenibilidad y la innovación en
-                cada colección.<br>
-                El propósito es que cada prenda logre transmitir confianza e intrepidez,
+                cada colección.</p><br>
+                <p class = "objectives--text" id="Our-objectives2">El propósito es que cada prenda logre transmitir confianza e intrepidez,
                 motivando a los consumidores a superar las fronteras y a construir su propia trayectoria en el
                 mundo.Se quiere consolidar la marca como una de las más referentes en el mercado de la
                 moda urbana, sirviendo como inspiración para una comunidad global y marcas emergentes
-                desafiando lo convencional.<br> 
-                Spicy Gallery busca conseguir convertirse en un movimiento
+                desafiando lo convencional.</p><br> 
+                <p class = "objectives--text" id="Our-objectives3">Spicy Gallery busca conseguir convertirse en un movimiento
                 cultural que fomente la creatividad y la diversidad. Se ambiciona a expandirse a nivel
                 internacional y colaborar con artistas y diseñadores que compartan la filosofía y valores de la
-                marca.
+                marca.</p>
             </div>
         </div>
     </section>
     <section class="slogan">
         <div class="aboutUs__slogan">
             <h1 class="slogan__title">Dare to be spicy</h1>
-            <div class="slogan__text">
+            <div class="slogan__description">
+            <p class="slogan__text" id="Dare-to-be-spicy">
                 El nombre de Spicy Gallery surge de la idea de integrar un toque de intensidad y fuerza a la
                 marca. Al igual que una especia intensifica y mejora el sabor de un plato, los diseños de
                 Spicy Gallery tratan de realzar la personalidad de quien la lleva, concediendo un distintivo a
                 cada usuario. Spicy representa energía y una perspectiva atrevida, desafiando los límites y las
-                barreras de la moda tradicional.<br><br>
-                “Dare to be Spicy” engloba la filosofía de la marca en una frase corta y
+                barreras de la moda tradicional.</p><br>
+                
+                <p class= "slogan__text" id= "Dare-to-be-spicy2">“Dare to be Spicy” engloba la filosofía de la marca en una frase corta y
                 directa: el atrevimiento a ser diferente, destacar y vivir sin miedo a expresarse. Proporciona
                 una llamada a abrazar el estilo streetwear sin limitaciones.Spicy Gallery es un desafío para
-                dejar atrás lo monótono y alcanzar una versión más vibrante de uno mismo.
+                dejar atrás lo monótono y alcanzar una versión más vibrante de uno mismo.            
+            </p>
+            
                 <img class="slogan__text--image" src="Image/IMG_1263.png">
             </div>
-        </div>  
+        </div> 
+         
     </section>
     
     <footer class="footer">
