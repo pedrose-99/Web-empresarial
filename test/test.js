@@ -1,5 +1,15 @@
 //Test
 
+const botonIdioma = document.querySelector(".btn__cambios--idiomaT");
+botonIdioma.addEventListener('click', () => 
+{
+    if (window.location.href.includes("test-es.html")) {
+        window.location.href = "test-en.html";
+    } else {
+        window.location.href = "test-es.html";
+    }
+});
+
 let opcion_elegida = [];
 let numero_preguntas = 6;
 
@@ -27,24 +37,25 @@ function mostrarResultado() {
     const resultDiv = document.querySelector('.result-spicyShop');
 
     if (cantidad_puntos <= 14) {
-        imageGenerada.src = 'logo.png';
-        textGenerado.textContent = 'Tu est';
+        imageGenerada.src = '../ImageNB/camisetaCompra1.png';
+        textGenerado.textContent = '';
     } else if (cantidad_puntos <= 24) {
-        imageGenerada.src = 'imagenes/tipos/dragon.png';
-        textGenerado.textContent = '¡Tu tipo Pokémon es Dragón!';
+        imageGenerada.src = '../ImageNB/SudaderaCompra1.png';
+        textGenerado.textContent = '';
     } else if (cantidad_puntos <= 34){
-        imageGenerada.src = 'imagenes/tipos/siniestro.png';
-        textGenerado.textContent = '¡Tu tipo Pokémon es Siniestro!';
+        imageGenerada.src = '../ImageNB/SudaderaCompra3.png';
+        textGenerado.textContent = '';
     } else if (cantidad_puntos <= 44){
-        imageGenerada.src = 'imagenes/tipos/volador.png';
-        textGenerado.textContent = '¡Tu tipo Pokémon es Volador!';
+        imageGenerada.src = '../ImageNB/camisetaCompra4.png';
+        textGenerado.textContent = '';
     } else if (cantidad_puntos <= 44){
-        imageGenerada.src = 'imagenes/tipos/hielo.png';
-        textGenerado.textContent = '¡Tu tipo Pokémon es de Hielo!';
+        imageGenerada.src = '../ImageNB/camisetaCompra5.png';
+        textGenerado.textContent = '';
     } else {
         imageGenerada.src = 'pxfuel.jpg';
-        textGenerado.textContent = '¡Tu tipo Pokémon es de Planta!';
+        textGenerado.textContent = '!';
     }
 
     resultDiv.style.display = 'block';
+
 }

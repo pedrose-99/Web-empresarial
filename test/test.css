@@ -1,8 +1,88 @@
+/*Navegación*/
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    background-color: black;
+}
+.navigation--item{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    border-style:solid;
+    border-color: black;
+    padding: 20px;
+}
+.navigation--item:hover{
+    border-top-color: white;
+    border-bottom-color: white;
+    transition-duration: 0.3s;
+}
+.btn{
+    background-color: black;
+    border: none;
+    color: white;
+}
+.btn__cambios--idiomaT{
+    font-size: 15px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: black;
+
+}
+.navigation--item--idioma{
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    min-height: 30px;
+}
+
+.mode{
+    background-color: rgba(41, 41, 41, 0.844);
+    padding: 10px;
+}
+.btn--mode{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+.btn--mode:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+/*FOOTER*/
+.footer{
+    font-size: 20px;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: black;
+    border-style: solid;
+    border-left-color: black;
+    border-right-color: black;
+}
+.redes--image{
+    max-width: 250px;
+    min-width: 250px;
+}
+
+
+
+
 .body-spicyShop {
-  background-color: #1a1a1a;
-  background-image: url('leopardo.jpg'); /* Usa una imagen de leopardo */
-  background-repeat: repeat;
-  background-size: contain;
+  background-image: url("../Image/leopardo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #f5f5f5;

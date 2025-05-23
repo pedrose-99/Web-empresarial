@@ -8,9 +8,21 @@
 </head>
 <body class="body-spicyShop">
 
+    <nav class="navigation">
+        <button class="btn__cambios--idiomaT">
+            <img class="navigation--item--idioma" src="../Image/idioma1.jpg">
+        </button>
+        <a class="navigation--item" href="../index.html" id="nav-item1">Inicio</a>
+        <a class="navigation--item" href="../pages/tienda.html" id="nav-item2">Tienda</a>
+        <a class="navigation--item" href="../pages/trabaja.html" id="nav-item3">Trabaja con nosotros</a>
+        <a class="navigation--item" href="test-es.html">Test</a>
+        
+        <button class="btn" id="boton_goTo_Cesta"><img class="navigation--item--cesta" src="../Image/carrito.png"></button>
+    </nav>
+
     <div class="container-spicyShop">
         <section class="section-spicyShop" id="p0-spicyShop">
-            <h3 class="section-spicyShop__title">1 - ¿Donde prefieres ir de vacaciones?</h3>
+            <h3 class="section-spicyShop__title">1 - ¿Dónde prefieres ir de vacaciones?</h3>
             <label class="section-spicyShop__label">
                 <input type="radio" value="1" name="p0-spicyShop" onclick="respuesta(0, this)"> Playa
             </label>
@@ -92,7 +104,7 @@
         <section class="section-spicyShop" id="p5-spicyShop">
             <h3 class="section-spicyShop__title">6 - ¿Qué fruta prefieres?</h3>
             <label class="section-spicyShop__label">
-                <input type="radio" value="1" name="p5-spicyShop" onclick="respuesta(5, this)"> Platano
+                <input type="radio" value="1" name="p5-spicyShop" onclick="respuesta(5, this)"> Plátano
             </label>
             <label class="section-spicyShop__label">
                 <input type="radio" value="2" name="p5-spicyShop" onclick="respuesta(5, this)"> Melón
@@ -111,8 +123,15 @@
             <img id="imagen-spicyShop" src="" alt="" class="result-spicyShop__img">
             <p id="text-spicyShop" class="result-spicyShop__text"> </p>
         </div>
-        <a class="volver-index-spicyShop" href="index.html">Volver al inicio</a>
+        <a class="volver-index-spicyShop" href="../index.html">Volver al inicio</a>
     </div>
+
+        
+    <footer class="footer">
+        <div class="redes">
+            <img class="redes--image" src="../Image/Redes.png">
+        </div>
+    </footer>
 
     <script src="test.js"></script>
 </body>

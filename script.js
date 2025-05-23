@@ -7,15 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const boton6 = document.querySelector(".compra__socio");
     const boton7 = document.querySelector(".compra__submit");
     
-
-    if (boton1) {
-        boton1.addEventListener('click', () => {
+//Botones cambios de página/alertas
+    if (boton1) 
+    {
+        boton1.addEventListener('click', () => 
+        {
             window.location.href = "pages/tienda.html";
         });
     }
 
-    if (boton2) {
-        boton2.addEventListener('click', () => {
+    if (boton2) 
+    {
+        boton2.addEventListener('click', () => 
+        {
             if (window.location.href.includes("index.html")) {
                 window.location.href = "pages/cesta.html";
             } else {
@@ -24,20 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (boton3) {
-        boton3.addEventListener('click', () => {
+    //botón alerta formulario enviado
+    if (boton3) 
+    {
+        boton3.addEventListener('click', () => 
+        {
             alert("Formulario enviado, ¡muchas gracias!");
         });
     }
 
-    if (boton4) {
-        boton4.addEventListener('click', () => {
+    if (boton4) 
+    {
+        boton4.addEventListener('click', () => 
+        {
             window.location.href = "compra.html";
         });
     }
 
-    if (boton5) {
-        boton5.addEventListener('click', () => {
+    if (boton5) 
+    {
+        boton5.addEventListener('click', () => 
+        {
             const productoCesta = document.getElementById("producto_cesta");
             if (productoCesta) {
                 productoCesta.remove();
@@ -45,14 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (boton6) {
-        boton6.addEventListener('click', () => {
+    //Botón alerta suscripción
+    if (boton6) 
+    {
+        boton6.addEventListener('click', () => 
+        {
             alert("Se enviará un correo a la dirección especificada con todos los detalles.");
         });
     }
 
-    if (boton7) {
-        boton7.addEventListener('click', () => {
+    if (boton7) 
+    {
+        boton7.addEventListener('click', () => 
+        {
             window.location.href = "pagoCompletado.html";
         });
     }
@@ -63,16 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
 //items
 document.addEventListener("DOMContentLoaded", () => 
 {
+    //Funcionamiento de todos los botones de la página de tienda
     const botones = document.querySelectorAll(".btn__item");
     botones.forEach((boton) => 
     {
         boton.addEventListener("click", () => 
         {
-        const id = boton.getAttribute("data-id");
-        if (id) 
-        {
-            window.location.href = `producto.html?id=${id}`;
-        }
+            const id = boton.getAttribute("data-id");
+            if (id) 
+            {
+                window.location.href = `producto.html?id=${id}`;
+            }
         });
     });
 });
@@ -80,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
 let currentLang = 'es';
 
+//Todos los productos posibles en la página de producto
 const productos = 
 {
     "camiseta-billar": 
@@ -169,6 +187,7 @@ const productos =
 
 };
 
+//Se muestra el producto en la plantilla
 function mostrarProducto(idProducto) 
 {
     const producto = productos[idProducto];
@@ -182,18 +201,22 @@ function mostrarProducto(idProducto)
     if (precioEl) precioEl.textContent = producto.precio.toFixed(2) + " €";
 } 
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+{
     const params = new URLSearchParams(window.location.search);
     const productId = params.get("id");
-    if (productId) {
+    if (productId) 
+    {
         mostrarProducto(productId);
     }
 });
 
 
 //cambio de idioma
+//Traducciones
 const data = 
 {
+    //español
     es: 
     {
         "nav-item1": "Inicio",
@@ -202,9 +225,12 @@ const data =
 
         "visitShop": "Visita nuestra tienda",
 
+        "About-us-title" : "Sobre nosotros",
+
         "About-us": "Spicy Gallery es mucho más que una simple tienda de ropa. Somos un estilo de vida. Nuestra pasión por el estilo y la moda urbana nos impulsa a ofrecer prendas únicas para jóvenes de mente libre.",
         "About-us2": "Spicy Gallery no se trata solo de ropa; es para quienes tienen el valor de mezclar cualquier estilo que les guste sin importar lo que digan los demás o las opiniones ajenas. En un mundo donde todos quieren encajar, Spicy Gallery es una marca que pretende romper con lo establecido, una marca pensada para el mundo.",
 
+        "Our-objectives-title" : "Nuestros objetivos",
         "Our-objectives": "Spicy Gallery aspira a ser un referente global, conectando con una comunidad apasionada por el arte, la música y el estilo de vida urbano, mientras busca aumentar la sostenibilidad e innovación en cada colección.",
         "Our-objectives2": "Nuestro propósito es que cada prenda logre transmitir confianza y valentía, motivando al consumidor a cruzar límites y construir su propio camino en este mundo. Queremos convertir esta marca en una de las más icónicas del mercado de la moda urbana, inspirando a una comunidad global y a marcas emergentes mientras desafiamos las normas.",
         "Our-objectives3": "Spicy Gallery busca convertirse en un movimiento cultural que promueva la creatividad y la diversidad. Queremos expandirnos a nivel internacional y colaborar con artistas y diseñadores cuyos valores y pensamientos coincidan con los de nuestra marca.",
@@ -212,6 +238,8 @@ const data =
         "Dare-to-be-spicy": "El nombre de nuestra marca nace de la idea de dar intensidad y fuerza. Así como una especia intensifica y mejora el sabor de cualquier plato, los diseños de Spicy Gallery buscan realzar la personalidad de quien los lleva, transmitiendo una vibra única. 'Spicy' representa energía y una perspectiva audaz, desafiando los límites y barreras de la moda tradicional.",
         "Dare-to-be-spicy2": "'Atrévete a ser Spicy' resume los valores de la marca en una frase simple y directa: la valentía de ser diferente, destacar y vivir sin miedo a expresarse. Promovemos abrazar el estilo urbano sin límites. Spicy Gallery es un desafío para dejar atrás lo aburrido y lograr una versión más vibrante de uno mismo.",
 
+
+        "shop": "Nuestro catálogo",
         "shop-item1": "Camiseta billar",
         "shop-item2": "Camiseta tigre",
         "shop-item3": "Camiseta básica Spicy",
@@ -253,6 +281,7 @@ const data =
         "purchase-home": "Ir a inicio"
     },
     
+    //Inglés
     en: {
     
         "nav-item1" : "Home",
@@ -261,9 +290,12 @@ const data =
 
         "visitShop" : "Visit our shop",
 
+        "About-us-title" : "About us",
+
         "About-us" : "Spicy Gallery is much more than a simple clothes store. We are a lifestyle. Our passion for style and urban fashion encourages us to offer unique clothes for free minded Young people.",
         "About-us2" : "Spicy gallery isn´t only about clothes; it´s for whoever is brave enough to mix any style they like without caring about what anyone says or other´s opinions. In a world in where everyone wants to fit in, Spicy gallery is a Brand that pretends going out of the norm, a Brand designed for the world.",
 
+        "Our-objectives-title" : "Our goals",
         "Our-objectives" : "Spicy gallery aims to be a global reference, connecting with a community passionate for art, music, and urban lifestyle while trying to increase sustainability and innovation in every collection.",
         "Our-objectives2" : "Our purpose is that every piece of clothing manages to show confidence and encouragement, motivating the consumer to cross the Edge and build their own Trail in this world. We´d like to make this Brand one of the most iconic in the urban fashion market, having an inspirative role for a global community and emerging brands while defying the norm.",
         "Our-objectives3" : "Spicy Gallery tries to turn into a cultural movement that promotes creativity and diversity. We want to expand to an international level and collab with artists and designers whose values and thoughts are similar to our brand ones.",
@@ -271,6 +303,8 @@ const data =
         "Dare-to-be-spicy" : "The name of our Brand comes from the idea of giving a bit of intensity and strenght to the Brand. As a spice intensifies and improves any dish taste, Spicy Gallery designs aim to enhance whoever wears them personality, giving each user a different vibe. Spicy represents energy and a bold perspective, defying any limits and barriers that the traditional fashion has.",
         "Dare-to-be-spicy2" :     "'Dare to be spicy' keeps the brand´s values in a simple and direct phrase: the boldness to be different, stick out and live without any fear of expressing yourself. We encourage to embrace streetwear style without limits. Spicy Gallery is a challenge to leave behind the boredom and dryness and achieve a more vibrant version of yourself.",
     
+
+        "shop" : "Our catalogue",
         "shop-item1" : "Pool shirt",
         "shop-item2" : "Tiger shirt",
         "shop-item3" : "Basic Spicy shirt",
@@ -330,6 +364,8 @@ const data =
     }
 }
 
+
+//Funciones para el cambio de idioma en cada página
 function changeLanguage1(lang) 
 {
     document.getElementById("nav-item1").textContent = data[lang]["nav-item1"];
@@ -338,9 +374,11 @@ function changeLanguage1(lang)
 
     document.getElementById("visitShop").textContent = data[lang]["visitShop"];
 
+    document.getElementById("About-us-title").textContent = data[lang]["About-us-title"];
     document.getElementById("About-us").textContent = data[lang]["About-us"];
     document.getElementById("About-us2").textContent = data[lang]["About-us2"];
 
+    document.getElementById("Our-objectives-title").textContent = data[lang]["Our-objectives-title"];
     document.getElementById("Our-objectives").textContent = data[lang]["Our-objectives"];
     document.getElementById("Our-objectives2").textContent = data[lang]["Our-objectives2"];
     document.getElementById("Our-objectives3").textContent = data[lang]["Our-objectives3"];
@@ -348,7 +386,6 @@ function changeLanguage1(lang)
     document.getElementById("Dare-to-be-spicy").textContent = data[lang]["Dare-to-be-spicy"];
     document.getElementById("Dare-to-be-spicy2").textContent = data[lang]["Dare-to-be-spicy2"];
 
-    localStorage.setItem("language", lang);
 }
 
 
@@ -358,6 +395,7 @@ function changeLanguage2(lang)
     document.getElementById("nav-item2").textContent = data[lang]["nav-item2"];
     document.getElementById("nav-item3").textContent = data[lang]["nav-item3"];
 
+    document.getElementById("shop").textContent = data[lang]["shop"];
     document.getElementById("shop-item1").textContent = data[lang]["shop-item1"];
     document.getElementById("shop-item2").textContent = data[lang]["shop-item2"];
     document.getElementById("shop-item3").textContent = data[lang]["shop-item3"];
@@ -371,7 +409,6 @@ function changeLanguage2(lang)
     document.getElementById("shop-item11").textContent = data[lang]["shop-item11"];
     document.getElementById("shop-item12").textContent = data[lang]["shop-item12"];
 
-    localStorage.setItem("language", lang);
 }
 
 function changeLanguage3(lang) {
@@ -396,14 +433,13 @@ function changeLanguage3(lang) {
   const add = document.getElementById("add");
   if (add) add.textContent = data[lang]["add"];
 
-
+//traducción según el producto que se muestre
   const params = new URLSearchParams(window.location.search);
   const productId = params.get("id");
   if (productId) {
     mostrarProducto(productId);
   }
 
-  localStorage.setItem("language", lang);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -434,7 +470,7 @@ function changeLanguage4(lang)
 
     document.getElementById("form-send").textContent = data[lang]["form-send"];
 
-    localStorage.setItem("language", lang);
+
 }
 function changeLanguage5(lang)
 {
@@ -442,7 +478,7 @@ function changeLanguage5(lang)
     document.getElementById("card-delete").textContent = data[lang]["card-delete"];
     document.getElementById("card-finish").textContent = data[lang]["card-finish"];
 
-    localStorage.setItem("language", lang);
+
 }
 
 function changeLanguage6(lang)
@@ -462,30 +498,16 @@ function changeLanguage6(lang)
     document.getElementById("subscribe").textContent = data[lang]["subscribe"];
     document.getElementById("purchase-confirmation").textContent = data[lang]["purchase-confirmation"];
 
-    localStorage.setItem("language", lang);
 }
 function changeLanguage7(lang)
 {
     document.getElementById("purchase-done-message").textContent = data[lang]["purchase-done-message"];
     document.getElementById("purchase-home").textContent = data[lang]["purchase-home"];
 
-    localStorage.setItem("language", lang);
+
 }
 
 
-window.addEventListener("load", () => 
-{
-  const savedLang = localStorage.getItem("language") || "es"; 
-  changeLanguage1(savedLang);
-});
-
-buttonLang = document.querySelector(".btn__cambios--idioma")
-buttonLang.addEventListener("click", () => 
-{
-  const currentLang = localStorage.getItem("language") || "es";
-  const newLang = currentLang === "es" ? "en" : "es";
-  setLanguage(newLang);
-});
 
 
 //Cesta
@@ -499,6 +521,7 @@ function addToCart()
     const tallaSeleccionada = document.querySelector('input[name="option"]:checked');
     const cantidad = parseInt(document.querySelector('.cantidad--number').value);
 
+    //Si no es válido
     if (!tallaSeleccionada || isNaN(cantidad) || cantidad <= 0) 
     {
         alert("Por favor, selecciona una talla y una cantidad válida.");
@@ -509,6 +532,7 @@ function addToCart()
 
     const producto = { nombre, precio, imagen, talla, cantidad };
 
+    //guardar producto en la cesta
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push(producto);
     localStorage.setItem('carrito', JSON.stringify(carrito));
@@ -517,17 +541,22 @@ function addToCart()
 }
 
 
-function cargarCarrito() 
-{
-    const productos = JSON.parse(localStorage.getItem('carrito')) || [];
+function cargarCarrito() {
     const contenedor = document.querySelector(".cesta__productos");
     const totalElemento = document.querySelector(".cesta__total");
+
+    // Solo continúa si los elementos existen
+    if (!contenedor || !totalElemento) {
+        console.warn("Elementos del carrito no encontrados en esta página.");
+        return;
+    }
+
+    const productos = JSON.parse(localStorage.getItem('carrito')) || [];
 
     contenedor.innerHTML = '';
     let total = 0;
 
-    productos.forEach((item, index) => 
-    {
+    productos.forEach((item, index) => {
         total += item.precio * item.cantidad;
 
         const productoHTML = `
@@ -547,6 +576,7 @@ function cargarCarrito()
     totalElemento.textContent = `Total: ${total.toFixed(2)} €`;
 }
 
+
 function eliminarProducto(index) 
 {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -562,17 +592,20 @@ function eliminarProducto(index)
  {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+    //si el carrito está vacío
     if (carrito.length === 0) 
     {
         alert("Tu cesta está vacía. Añade productos antes de finalizar la compra.");
-        window.location.href = "tienda.html";         
+        window.location.href = "tienda.html";      
         return;
     }
+    //si no
     else
     {
         localStorage.removeItem('carrito');
         alert("Cesta confirmada");
         window.location.href = "compra.html";
+
     }
 
 }

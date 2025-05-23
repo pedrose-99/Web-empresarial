@@ -258,8 +258,11 @@ body{
 }
 .producto__addTo__Cesta{
     background-color: #871919;
-    padding: 25px;
-    border-radius: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    
     font-size: 20px;
     color: white;
     border: none;
