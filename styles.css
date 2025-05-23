@@ -525,3 +525,174 @@ body{
     border-style: solid;
     border-color: white;
 }
+
+/*Responsive*/
+@media (max-width: 1200px) {
+    .inicio__shop {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    .objecivos__texto {
+        grid-template-areas: 
+        'a'
+        'c'
+        'b';
+        padding: 20px;
+    }
+
+    .objetivos__image,
+    .objetivos__texto--text {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .producto__compra {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .producto__descripcion {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .trabaja__titulo {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .trabaja__titulo--texto1,
+    .trabaja__titulo--texto2 {
+        font-size: 60px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .trabaja__equipo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .unete {
+        padding: 30px;
+    }
+
+    .unete__formulario {
+        flex-direction: column;
+    }
+
+    .unete__imagen {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .unete__envio {
+        margin: 30px auto;
+        display: block;
+    }
+
+    .cesta__boton {
+        margin-left: 0;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .cesta__productos--producto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cesta__botonD {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .cesta__total {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .catalogo__itemList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalogo--item--img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .compra__buttons {
+        margin-left: 0;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .compra__buttons > * {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation--item {
+        margin-bottom: 10px;
+    }
+
+    .aboutUs__intro {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aboutUs__intro--image {
+        max-width: 100%;
+        min-width: auto;
+        height: auto;
+    }
+
+    .slogan__description {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slogan__text--image {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .inicio {
+        padding: 20px;
+    }
+
+    .inicio__shop {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .catalogo--item--desc {
+        font-size: 16px;
+    }
+
+    .trabaja__titulo--texto1,
+    .trabaja__titulo--texto2 {
+        font-size: 40px;
+    }
+
+    .equipo--card--img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .unete__campo--input {
+        padding-right: 20px;
+        width: 100%;
+    }
+}

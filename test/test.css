@@ -204,3 +204,17 @@
 .volver-index-spicyShop:hover {
   background-color: #aa3939;
 }
+
+@media (max-width: 768px) 
+{
+    .navigation 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation--item 
+    {
+        margin-bottom: 10px;
+    }
+}
