@@ -492,6 +492,10 @@ function changeLanguage5(lang)
 
 function changeLanguage6(lang)
 {
+    document.getElementById("nav-item1").textContent = data[lang]["nav-item1"];
+    document.getElementById("nav-item2").textContent = data[lang]["nav-item2"];
+    document.getElementById("nav-item3").textContent = data[lang]["nav-item3"];
+
     document.getElementById("purchase-address").textContent = data[lang]["purchase-address"];
     document.getElementById("purchase-address-city").textContent = data[lang]["purchase-address-city"];
     document.getElementById("purchase-address-street").textContent = data[lang]["purchase-address-street"];

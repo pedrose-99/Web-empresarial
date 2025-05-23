@@ -533,20 +533,32 @@ body{
         width: 80%;
     }
 
-    .objecivos__texto {
+    .objetivos__texto {
         grid-template-areas: 
         'a'
-        'c'
-        'b';
+        'b'
+        'c';
         padding: 20px;
     }
 
-    .objetivos__image,
+    .objetivos__image{
+        grid-area: b;
+        max-width: 100%;
+        min-width: auto;
+        max-height: 100%;
+        min-height: auto;
+    }
     .objetivos__texto--text {
         max-width: 100%;
         min-width: auto;
+        grid-area: c;
+        padding-top: 20px;
+        margin-right: 10px;
+        margin-left: -30px;
     }
-
+    .producto__imagen{
+        max-width: 100%;
+    }
     .producto__compra {
         flex-direction: column;
         padding: 20px;
@@ -624,7 +636,9 @@ body{
         width: 100%;
         max-width: 300px;
     }
-
+    .compra__datos--direccion{
+        flex-direction: column;
+    }
     .compra__buttons {
         margin-left: 0;
         align-items: center;
@@ -649,7 +663,9 @@ body{
 
     .aboutUs__intro {
         flex-direction: column;
-        padding: 20px;
+        margin-left: -90px;
+        margin-right: 20px;
+        padding: 0px;
     }
 
     .aboutUs__intro--image {
@@ -660,12 +676,14 @@ body{
 
     .slogan__description {
         flex-direction: column;
-        align-items: center;
+        margin-right: 20px;
+        padding: 0px;
     }
 
     .slogan__text--image {
         max-width: 100%;
         min-width: auto;
+        height: auto;
     }
 
     .inicio {
@@ -693,6 +711,14 @@ body{
 
     .unete__campo--input {
         padding-right: 20px;
-        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+        
+    }
+    .unete__imagen{
+        max-width: 100%;
+        min-width: auto;
+        max-height: 100%;
+        min-height: auto;
     }
 }
