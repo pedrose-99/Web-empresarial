@@ -472,11 +472,20 @@ function changeLanguage4(lang)
 
 
 }
+
 function changeLanguage5(lang)
 {
+    document.getElementById("nav-item1").textContent = data[lang]["nav-item1"];
+    document.getElementById("nav-item2").textContent = data[lang]["nav-item2"];
+    document.getElementById("nav-item3").textContent = data[lang]["nav-item3"];
+
     document.getElementById("card-title").textContent = data[lang]["card-title"];
-    document.getElementById("card-delete").textContent = data[lang]["card-delete"];
-    document.getElementById("card-finish").textContent = data[lang]["card-finish"];
+
+    const del = document.getElementById("card-delete");
+    if (del) del.textContent = data[lang]["card-delete"];
+
+    const finish = document.getElementById("card-finish");
+    if (finish) finish.textContent = data[lang]["card-finish"];
 
 
 }
@@ -499,6 +508,7 @@ function changeLanguage6(lang)
     document.getElementById("purchase-confirmation").textContent = data[lang]["purchase-confirmation"];
 
 }
+
 function changeLanguage7(lang)
 {
     document.getElementById("purchase-done-message").textContent = data[lang]["purchase-done-message"];
