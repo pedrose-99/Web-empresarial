@@ -9,6 +9,14 @@ botonIdioma.addEventListener('click', () =>
         window.location.href = "test-es.html";
     }
 });
+const boton2 = document.getElementById("boton_goTo_Cesta2");
+    if (boton2) 
+    {
+        boton2.addEventListener('click', () => 
+        {    
+            window.location.href = "../pages/cesta.html";
+        });
+    }
 
 let opcion_elegida = [];
 let numero_preguntas = 6;
